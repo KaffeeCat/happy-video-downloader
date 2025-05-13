@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Happy Video Downloader",
+  "version": "1.0",
+  "description": "在视频网页顶部悬浮下载按钮，检测视频并支持一键下载。",
+  "permissions": ["downloads", "scripting"],
+  "host_permissions": [
+    "https://rule34video.com/*",
+    "https://javtiful.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://rule34video.com/*",
+        "https://javtiful.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "icons/7687876.png",
+    "32": "icons/7687876.png",
+    "48": "icons/7687876.png",
+    "128": "icons/7687876.png"
+  }
+} 

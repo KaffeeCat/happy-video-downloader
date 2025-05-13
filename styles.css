@@ -1,0 +1,25 @@
+#rule34-downloader-navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 99999;
+  background: rgba(30,30,30,0.95);
+  padding: 8px 0 8px 16px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+#rule34-download-btn {
+  border: none;
+  outline: none;
+  background: #888;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+#rule34-download-btn:disabled {
+  opacity: 0.6;
+} 
